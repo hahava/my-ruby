@@ -27,3 +27,22 @@ end
 
 puts capitalized("hello \nworld")
 puts capitalized('hello \n world')
+
+a = [1, 'cat', 3.14]
+p a
+
+a[2] = nil
+p a
+a = ['kalin', 'halin', "hahava"]
+p a
+
+a = %w[kalin halin hahava]
+p a
+
+company = {
+  'dunamu' => a,
+  'nts' => '2',
+  'naver' => 3
+}
+
+puts company
