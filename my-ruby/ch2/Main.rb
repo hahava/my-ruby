@@ -45,4 +45,20 @@ company = {
   'naver' => 3
 }
 
-puts company
+radiation = 4000
+
+if radiation > 3000
+  puts "Danger"
+end
+
+puts "Danger" if radiation > 3000
+
+def call_block
+  puts "Start of method"
+  yield
+  yield
+  puts "End of method"
+end
+
+call_block { puts "Hello I am a yield" }
+
