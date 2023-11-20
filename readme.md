@@ -1,3 +1,0 @@
-# My Ruby Programming
-
-Daily I will learn ruby ...
