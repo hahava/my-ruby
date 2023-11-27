@@ -2,14 +2,17 @@ class Api::V1::UsersController < ApplicationController
   protect_from_forgery with: :null_session
 
   def register
-    @user = User.new(JSON.parse(request.body.read))
+    user_registration_request = JSON.parse(request.body.read)
 
-    result = @user.save
+    user_id = user_registration_request["user_id"]
 
-    if result
-      render json: { status: 'success' }
+    user = User.find_by(user_id: user_id)
+
+    if user
+       head :conflict
     else
-      render json: { status: 'bad_request' }
+      User.create(user_registration_request).save
+      head :created
     end
   end
 end
