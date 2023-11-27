@@ -1190,3 +1190,82 @@ Migrating to CreateUsers (20231122141237)
   [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20231122141237')[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8403878983632550530')[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 22:56:12 +0900
+  
+NameError (uninitialized constant UsersController):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 22:56:34 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/users"):
+  
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 22:56:55 +0900
+  
+NameError (uninitialized constant UsersController):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 22:58:17 +0900
+  
+NameError (uninitialized constant UsersController):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 22:59:33 +0900
+  
+NameError (uninitialized constant UsersController):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:00:42 +0900
+  
+NameError (uninitialized constant UsersApi):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:02:18 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:02:23 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:02:27 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:03:00 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:03:01 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:03:21 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+  
+NoMethodError (undefined method `save' for nil:NilClass):
+  
+app/api/users_api.rb:19:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:03:51 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/api/users_api.rb:19:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO `users` (`user_id`, `password`, `nick_name`, `created_at`, `updated_at`) VALUES ('john_doe', 'john.doe@example.com', 'kalin', '2023-11-27 13:36:31.914696', '2023-11-27 14:03:51.955542')[0m
+  ↳ app/api/users_api.rb:19:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/api/users_api.rb:19:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:03:54 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-27 23:07:37 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/api/users_api.rb:21:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO `users` (`user_id`, `password`, `nick_name`, `created_at`, `updated_at`) VALUES ('john_doe', 'john.doe@example.com', 'kalin', '2023-11-27 14:07:37.089293', '2023-11-27 14:07:37.089293')[0m
+  ↳ app/api/users_api.rb:21:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/api/users_api.rb:21:in `block (2 levels) in <class:UsersApi>'
