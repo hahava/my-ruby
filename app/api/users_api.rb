@@ -11,7 +11,7 @@ class UsersApi < Grape::API
       requires :password, type: String, desc: '암호'
     end
     post do
-      user = User.find_by(user_id: params[:user_id])
+      user = User.where(user_id: params[:user_id]).or(User.where(nick_name: params[:nick_name])).first
 
       return status 409 if user.present?
 
