@@ -11,17 +11,19 @@ class UsersApi < Grape::API
       requires :password, type: String, desc: '암호'
     end
     post do
-      permitted_params = declared(params, include_missing: false)
+      user = User.find_by(user_id: params[:user_id])
 
-      user = User.find_by(user_id: permitted_params[:user_id])
+      return status 409 if user.present?
 
-      if user
-        status 409
+      if User.create(
+        user_id: params[:user_id],
+        password: BCrypt::Password.create(params[:password]),
+        nick_name: params[:nick_name]
+      )
+        return status 201
       else
-        User.create(permitted_params).save()
-        status 201
+        return status 500
       end
     end
   end
 end
-
