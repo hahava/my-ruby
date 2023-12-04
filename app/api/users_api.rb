@@ -1,3 +1,5 @@
+require_relative '../lib/response'
+
 class UsersApi < Grape::API
 
   version 'v1'
@@ -13,16 +15,21 @@ class UsersApi < Grape::API
     post do
       user = User.where(user_id: params[:user_id]).or(User.where(nick_name: params[:nick_name])).first
 
-      return status 409 if user.present?
-
-      if User.create(
-        user_id: params[:user_id],
-        password: BCrypt::Password.create(params[:password]),
-        nick_name: params[:nick_name]
-      )
-        return status 201
+      if user.present?
+        status 409
+        Response.new(code: 'error', message: 'duplicated id or nickname').to_json
       else
-        return status 500
+
+        if User.create(
+          user_id: params[:user_id],
+          password: BCrypt::Password.create(params[:password]),
+          nick_name: params[:nick_name]
+        ).present?
+
+          status 201
+          Response.new(code: 'code', message: 'success').to_json
+        end
+
       end
     end
   end
