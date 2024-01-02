@@ -1457,3 +1457,1617 @@ ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'users.email' in '
 Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:00:49 +0900
   [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
   ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:11:48 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+  
+NameError (uninitialized constant UsersApi::Response):
+  
+app/api/users_api.rb:17:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:11:56 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/api/users_api.rb:20:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO `users` (`user_id`, `password`, `nick_name`, `created_at`, `updated_at`) VALUES ('john_doe', '$2a$12$.XtjaSATnOpfb9VO7mlV8.jUSV9ljFfDcOmK8guemCSc6hWN5044K', 'kalin', '2023-11-28 14:11:56.468501', '2023-11-28 14:11:56.468501')[0m
+  ↳ app/api/users_api.rb:20:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/api/users_api.rb:20:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:12:06 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:14:in `block (2 levels) in <class:UsersApi>'
+  
+NameError (uninitialized constant UsersApi::Response):
+  
+app/api/users_api.rb:17:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:14:03 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+  
+NoMethodError (undefined method `render' for #<Class:0x000000011aaf3168> in `/:version/users' endpoint):
+  
+app/api/users_api.rb:19:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:15:51 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:17:54 +0900
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:17:55 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for 127.0.0.1 at 2023-11-28 23:18:09 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/logins" for 127.0.0.1 at 2023-12-04 23:56:46 +0900
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+):
+  
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:44:in `rescue in new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:159:in `connect'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:167:in `reconnect'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `verify!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:795:in `connect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1001:in `block in with_raw_connection'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1113:in `valid_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1100:in `any_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:181:in `get_full_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:87:in `get_database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:871:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:657:in `check_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:675:in `new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:720:in `checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:699:in `try_to_checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:657:in `acquire_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `connection'
+activerecord (7.1.2) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.2) lib/active_record/migration.rb:773:in `block in pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `each'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:751:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-12-04 23:57:11 +0900
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+):
+  
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:44:in `rescue in new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:159:in `connect'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:167:in `reconnect'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `verify!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:795:in `connect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1001:in `block in with_raw_connection'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1113:in `valid_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1100:in `any_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:181:in `get_full_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:87:in `get_database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:871:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:657:in `check_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:675:in `new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:720:in `checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:699:in `try_to_checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:657:in `acquire_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `connection'
+activerecord (7.1.2) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.2) lib/active_record/migration.rb:773:in `block in pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `each'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:751:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-12-04 23:57:32 +0900
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+):
+  
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:44:in `rescue in new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:159:in `connect'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:167:in `reconnect'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `verify!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:795:in `connect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1001:in `block in with_raw_connection'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1113:in `valid_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1100:in `any_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:181:in `get_full_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:87:in `get_database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:871:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:657:in `check_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:675:in `new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:720:in `checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:699:in `try_to_checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:657:in `acquire_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `connection'
+activerecord (7.1.2) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.2) lib/active_record/migration.rb:773:in `block in pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `each'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:751:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('8403878983632550530', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (9.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT * FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' ORDER BY `ar_internal_metadata`.`key` ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8403878983632550530')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-12-04 23:59:39 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'user_id' AND `users`.`password` = '$2a$12$aMS1L7wPOP7ZMv.BHi579ekQn4PTxyZX0iQ2UU2Itg2uO/dfRUSEi' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'users.email' in 'where clause'):
+  
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-12-05 00:00:00 +0900
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'user_id' AND `users`.`password` = '$2a$12$g/ByXCGBdPeyVeSCw4J9yO8eFM8/Mc6sQZetCNsunYRgREWyCAPUW' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-12-05 00:01:07 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'user_id' AND `users`.`password` = '$2a$12$1300CZg9pO0tH9uiE3szmuxtpeM4rbsqJP.fq7/gYlJiUf.kemG7a' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for 127.0.0.1 at 2023-12-05 00:01:40 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'user_id' AND `users`.`password` = '$2a$12$w5pM4S7FR4QZrcs9TBpKw.BgDn.eCMwu0ATNz51uaDVpqgEiMJ08K' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:02:33 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$I9VLaPcNfMlcz6zwoNIByOqmes2.XZABtLXD5.aSGefaMlXAg6rZ2' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:02:57 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$xKVsD51bnQ6rIUiLnjPHTOVqruJu5o75iXf1djuWm3O644PIbgfLK' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:03:12 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$QtPeeQ0gSh7Wa2vT11KCNO8mfAznWvfQIv7K0ckL4kstnArUM9FyW' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:03:38 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$RbbDjMdtfMSM3.xBEwzmjudEIc.LRyIGoW4zARBM85dA08cw7jEVe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:03:48 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$Gnum13.QN8OU..9qgunDjePwCgTNDSwk04yP3ZGO0AZ/uI62QWdIq' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:03:50 +0900
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$ea8cVQ4G2K4zasYvzEy2re.HJD6rKSOmbiQdp7Uker4WmMiqmMZWW' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:03:57 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$aKkCcK5Z83b96gZRP58a2eCCUt0htUk/FspPT1XNstBgVNmImqihq' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:04:31 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$vvmT5hzTN98k.RQDRc0cZeZHEUVYqkQiVdD1KvWAIiSbFBzLqouyO' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:05:15 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'kalin' AND `users`.`password` = '$2a$12$7soKQ/q30LMjOVT4PskuYOebDMisdzZhIYgsyh5WcrACW3GEr6iqS' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:05:29 +0900
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' AND `users`.`password` = '$2a$12$x0.rnmU3OKu6eprmnJyi0ugFoNwMVS4m9W9Cd3n.J.kqe56cADY2G' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:05:47 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' AND `users`.`password` = '$2a$12$wdJzh9fTpfX.dDDfe0xXUevZ5zy6ddsmwkS91fzmQbtQmIF8Pu54S' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:09:50 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' AND `users`.`password` = '$2a$12$C3blHeokwovJxi5fpAX7I.8SmqGetgZbetjo5NMekD2/7hat0REiq' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:17:38 +0900
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/api/login_api.rb:13:in `new'
+app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:17:58 +0900
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/api/login_api.rb:13:in `new'
+app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:21:09 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/api/login_api.rb:15:in `new'
+app/api/login_api.rb:15:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:23:18 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:23:33 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:23:41 +0900
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/users" for ::1 at 2023-12-05 00:25:07 +0900
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe1' OR `users`.`nick_name` = 'kalin') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:25:14 +0900
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/users" for ::1 at 2023-12-05 00:25:51 +0900
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe1' OR `users`.`nick_name` = 'kalin1') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/api/users_api.rb:23:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO `users` (`user_id`, `password`, `nick_name`, `created_at`, `updated_at`) VALUES ('john_doe1', '$2a$12$UpDjMjgborUutQo7lEt1mOo22QphdlPAsas/YUOJEEkZ2GkJFmiQ.', 'kalin1', '2023-12-04 15:25:51.397793', '2023-12-04 15:25:51.397793')[0m
+  ↳ app/api/users_api.rb:23:in `block (2 levels) in <class:UsersApi>'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/api/users_api.rb:23:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:25:56 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:26:07 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:26:23 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:27:33 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:28:06 +0900
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:28:37 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:29:30 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:39:08 +0900
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:39:15 +0900
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:39:20 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:41:03 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe1' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:41:38 +0900
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:41:55 +0900
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:43:15 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:43:31 +0900
+  
+SyntaxError (/Users/kalin/projects/my-ruby/app/api/login_api.rb:18: syntax error, unexpected local variable or method, expecting ')'
+      p BCrypt::Password.new(user.pa...
+      ^
+/Users/kalin/projects/my-ruby/app/api/login_api.rb:31: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+app/api/login_api.rb:18: syntax error, unexpected local variable or method, expecting ')'
+app/api/login_api.rb:31: syntax error, unexpected `end'
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:43:35 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:44:03 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:44:10 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:44:13 +0900
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:44:19 +0900
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:44:35 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:44:41 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:45:19 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/users" for ::1 at 2023-12-05 00:49:55 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe1' OR `users`.`nick_name` = 'kalin1') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for ::1 at 2023-12-05 00:50:14 +0900
+  
+SyntaxError (/Users/kalin/projects/my-ruby/app/api/login_api.rb:18: syntax error, unexpected ')', expecting `end' or dummy end
+...password) == params[:password])
+...                              ^
+/Users/kalin/projects/my-ruby/app/api/login_api.rb:23: syntax error, unexpected tLAMBEG
+        payload = { sub: user.id, exp: Time.now....
+                  ^
+/Users/kalin/projects/my-ruby/app/api/login_api.rb:32: syntax error, unexpected `end'
+  end
+  ^~~
+):
+  
+app/api/login_api.rb:18: syntax error, unexpected ')', expecting `end' or dummy end
+app/api/login_api.rb:23: syntax error, unexpected tLAMBEG
+app/api/login_api.rb:32: syntax error, unexpected `end'
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/users" for ::1 at 2023-12-05 00:50:17 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe1' OR `users`.`nick_name` = 'kalin1') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for ::1 at 2023-12-05 00:50:22 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe1' OR `users`.`nick_name` = 'kalin1') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/users" for ::1 at 2023-12-05 00:50:27 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (`users`.`user_id` = 'john_doe1' OR `users`.`nick_name` = 'kalin1') ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/api/users_api.rb:16:in `block (2 levels) in <class:UsersApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:50:34 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:51:04 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:51:20 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-05 00:51:35 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:51:42 +0900
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+):
+  
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:44:in `rescue in new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:159:in `connect'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:167:in `reconnect'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `verify!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:795:in `connect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1001:in `block in with_raw_connection'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1113:in `valid_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1100:in `any_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:181:in `get_full_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:87:in `get_database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:871:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:657:in `check_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:675:in `new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:720:in `checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:699:in `try_to_checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:657:in `acquire_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `connection'
+activerecord (7.1.2) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.2) lib/active_record/migration.rb:773:in `block in pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `each'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:751:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:51:51 +0900
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting with your hostname: 127.0.0.1.
+
+Please check your database configuration and ensure there is a valid connection to your database.
+):
+  
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:44:in `rescue in new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:35:in `new_client'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:159:in `connect'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:167:in `reconnect'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:788:in `verify!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:795:in `connect!'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1001:in `block in with_raw_connection'
+activesupport (7.1.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `with_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1113:in `valid_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:1100:in `any_raw_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/mysql2_adapter.rb:181:in `get_full_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:87:in `get_database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_adapter.rb:871:in `database_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:657:in `check_version'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:675:in `new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:720:in `checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:699:in `try_to_checkout_new_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:657:in `acquire_connection'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+activerecord (7.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `connection'
+activerecord (7.1.2) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.2) lib/active_record/migration.rb:773:in `block in pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `each'
+activerecord (7.1.2) lib/active_record/migration.rb:772:in `pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:751:in `check_pending_migrations'
+activerecord (7.1.2) lib/active_record/migration.rb:643:in `block (2 levels) in call'
+activesupport (7.1.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.2) lib/active_record/migration.rb:648:in `block in call'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `synchronize'
+activerecord (7.1.2) lib/active_record/migration.rb:640:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:52:54 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (9.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:52:56 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:53:21 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:53:29 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:53:37 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:54:33 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:54:44 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:55:14 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:55:38 +0900
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:55:59 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:59:06 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 22:59:15 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:00:30 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:00:42 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:01:04 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:01:10 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:01:38 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:01:50 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:02:06 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:02:24 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:02:51 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:02:57 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:04:24 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:04:39 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+NoMethodError (undefined method `jwt_token' for #<Class:0x0000000117897638> in `/:version/login' endpoint):
+  
+app/api/login_api.rb:20:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:04:45 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:05:20 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:07:27 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:07:32 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:08:01 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:08:09 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:08:48 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:09:30 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+NameError (uninitialized constant LoginApi::MultiJson):
+  
+app/api/login_api.rb:20:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:11:06 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+NameError (uninitialized constant LoginApi::MultiJson):
+  
+app/api/login_api.rb:20:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:11:13 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:11:18 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:11:32 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:11:38 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:12:03 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:17:07 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:17:08 +0900
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:17:15 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+TypeError (no implicit conversion of Hash into String):
+  
+rack (3.0.8) lib/rack/etag.rb:62:in `<<'
+rack (3.0.8) lib/rack/etag.rb:62:in `block in digest_body'
+rack (3.0.8) lib/rack/etag.rb:61:in `each'
+rack (3.0.8) lib/rack/etag.rb:61:in `digest_body'
+rack (3.0.8) lib/rack/etag.rb:33:in `call'
+rack (3.0.8) lib/rack/conditional_get.rb:43:in `call'
+rack (3.0.8) lib/rack/head.rb:15:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.2) lib/action_dispatch/http/content_security_policy.rb:33:in `call'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:272:in `context'
+rack-session (2.0.0) lib/rack/session/abstract/id.rb:266:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.2) lib/active_record/migration.rb:654:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `block in tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.2) lib/active_support/tagged_logging.rb:135:in `tagged'
+activesupport (7.1.2) lib/active_support/broadcast_logger.rb:240:in `method_missing'
+railties (7.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.0.8) lib/rack/method_override.rb:28:in `call'
+rack (3.0.8) lib/rack/runtime.rb:24:in `call'
+activesupport (7.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.0.8) lib/rack/sendfile.rb:114:in `call'
+actionpack (7.1.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.2) lib/rails/engine.rb:529:in `call'
+puma (6.4.0) lib/puma/configuration.rb:272:in `call'
+puma (6.4.0) lib/puma/request.rb:100:in `block in handle_request'
+puma (6.4.0) lib/puma/thread_pool.rb:378:in `with_force_shutdown'
+puma (6.4.0) lib/puma/request.rb:99:in `handle_request'
+puma (6.4.0) lib/puma/server.rb:443:in `process_client'
+puma (6.4.0) lib/puma/server.rb:241:in `block in run'
+puma (6.4.0) lib/puma/thread_pool.rb:155:in `block in spawn_thread'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:17:20 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:21:25 +0900
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/lib/response.rb:1:in `<main>'
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:22:05 +0900
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/lib/response.rb:3:in `<main>'
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:24:27 +0900
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/lib/response.rb:2:in `<module:API>'
+app/lib/response.rb:1:in `<main>'
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:24:58 +0900
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/lib/response.rb:2:in `<module:API>'
+app/lib/response.rb:1:in `<main>'
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:25:55 +0900
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/lib/response.rb:2:in `<module:API>'
+app/lib/response.rb:1:in `<main>'
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:25:56 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/login"):
+  
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:26:21 +0900
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/lib/response.rb:2:in `<module:API>'
+app/lib/response.rb:1:in `<main>'
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:26:27 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/login"):
+  
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:26:34 +0900
+  
+NameError (uninitialized constant Grape::Entity):
+  
+app/lib/response.rb:2:in `<module:API>'
+app/lib/response.rb:1:in `<main>'
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:27:00 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/login"):
+  
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:27:36 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:15:in `block (2 levels) in <class:LoginApi>'
+  
+NameError (uninitialized constant LoginApi::ApI):
+  
+app/api/login_api.rb:21:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:27:51 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+NoMethodError (undefined method `represent' for Response:Class):
+  
+app/api/login_api.rb:19:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:28:20 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+  
+NoMethodError (undefined method `represent' for Response:Class):
+  
+app/api/login_api.rb:19:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:28:26 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:28:30 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:28:45 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:28:57 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:29:02 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:29:07 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:29:21 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:29:33 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:29:48 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:29:56 +0900
+  
+SyntaxError (/Users/kalin/projects/my-ruby/app/api/login_api.rb:19: syntax error, unexpected ')', expecting =>
+...onse.new(200, data: token, 200)
+...                              ^
+):
+  
+app/api/login_api.rb:19: syntax error, unexpected ')', expecting =>
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:30:11 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:30:24 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:30:40 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:31:17 +0900
+  
+SyntaxError (/Users/kalin/projects/my-ruby/app/lib/response.rb:9: syntax error, unexpected ':', expecting =>
+    { @status : @status, code: @code, data: ...
+              ^
+):
+  
+app/lib/response.rb:9: syntax error, unexpected ':', expecting =>
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:31:23 +0900
+  
+SyntaxError (/Users/kalin/projects/my-ruby/app/lib/response.rb:9: syntax error, unexpected ':', expecting =>
+    { status : @status, code: @code, data: ...
+             ^
+):
+  
+app/lib/response.rb:9: syntax error, unexpected ':', expecting =>
+app/api/users_api.rb:1:in `require_relative'
+app/api/users_api.rb:1:in `<main>'
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:31:29 +0900
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:31:39 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:31:47 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:32:04 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:32:38 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:32:39 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:32:40 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:32:41 +0900
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:32:42 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-12 23:32:42 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:52 +0900
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:53 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:54 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:55 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:55 +0900
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:56 +0900
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:57 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:58 +0900
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:58 +0900
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:38:59 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:39:00 +0900
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:39:00 +0900
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:39:01 +0900
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
+Started POST "/api/v1/login" for ::1 at 2023-12-14 22:39:02 +0900
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`user_id` = 'john_doe' LIMIT 1[0m
+  ↳ app/api/login_api.rb:13:in `block (2 levels) in <class:LoginApi>'
